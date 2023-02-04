@@ -335,12 +335,108 @@ label {
 
 
 
-
-
-
-
 .info-response {
     width: 43%;
     height: 100vh;
     background-color: white;
+
+    display: flex;
+    flex-direction: row;
+
+    position: relative;
 }
+
+.info-response .dynamic-text {
+    width: 60%;
+    height: 50vh;
+    /*background-color: aquamarine;*/
+
+    padding-left: 80px;
+    padding-top: 68px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.info-response .dynamic-text h2 {
+    font-family: 'MyFont';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 42px;
+
+    color: #F93B1D;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.info-response .dynamic-text .contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.info-response .dynamic-text .contact img {
+    margin: 0;
+    width: 16px;
+    height: 16px;
+}
+
+.info-response .dynamic-text .contact p {
+    font-family: 'MyFont';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+
+    /* off black */
+    color: #1A1A1A;
+
+    margin: 0;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.info-response .dynamic-text .about-person h3 {
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+
+    /* identical to box height */
+    color: #F93B1D;
+
+    margin: 33px 0 5px 0;
+}
+
+.info-response .dynamic-text .about-person p {
+    font-family: 'MyFont';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+
+    /* or 138% */
+    text-transform: lowercase;
+
+    color: #000000;
+}
+
+
+.info-response .dynamic-image {
+    width: 40%;
+    height: 50vh;
+    /*background-color:antiquewhite;*/
+    padding-top: 33px;
+}
+
+.red-logo {
+    position: absolute;
+    bottom: 44px;
+    margin-left: 44px;
+
+    width: 42px;
+    height: 42px;
+}
+
