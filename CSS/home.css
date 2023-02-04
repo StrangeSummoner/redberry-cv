@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url('../font/HelveticaNeue.ttc') format('truetype');
+  }
+
+body {
+    background-image: url("../img/shutterstock_2189773743 1background.png");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    font-family: 'MyFont', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    position: absolute;
+    width: 236px;
+    height: 38px;
+    left: 70px;
+    top: 25px;
+}
+
+hr {
+    position: absolute;
+    height: 0px;
+    left: 70px;
+    right: 70px;
+    top: 89px;
+    margin: 1px;
+
+    /* off black */    
+    border: 1px solid #1A1A1A;
+}
+
+button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 60px;
+    gap: 20px;
+
+    position: absolute;
+    width: 464px;
+    height: 60px;
+    left: calc(50% - 464px/2);
+    top: 513px;
+
+    cursor: pointer;
+    z-index: 100;
+
+    /* off black */
+    background: #1A1A1A;
+    border-radius: 8px;
+
+    /* text design */
+    font-family: 'MyFont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #FFFFFF;
+
+
+    /* Inside auto layout */
+    /*flex: none;
+    order: 0;
+    flex-grow: 0;*/
+}
+
+.button-container {
+    text-align: center;
+}
+
+.logo-vat {
+    background: url("../img/logo-vat.png");
+    mix-blend-mode: multiply;
+    opacity: 0.6;
+
+    position: absolute;
+    width: 299px;
+    height: 299px;
+    left: 1076px;
+    top: 473px;
+}
