@@ -1,0 +1,346 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url('../font/HelveticaNeue.ttc') format('truetype');
+  }
+
+body {
+    font-family: 'MyFont', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+}
+
+.form-1 {
+    width: 57%;
+    height: 100vh;
+    background-color: #F9F9F9;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.form-1 .header {
+    /*background-color: pink;*/
+    margin: 0;
+    width: 100%;
+    height: 14vh;
+}
+
+.form-1 .header h3 {
+    position: absolute;
+    width: 179px;
+    height: 29px;
+    left: 149px;
+    top: 47px;
+
+    font-family: 'myFont';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+
+    margin: 0;
+
+    /* off black */    
+    color: #1A1A1A;
+}
+
+.form-1 .header h2 {
+    position: absolute;
+    width: 29px;
+    height: 24px;
+    left: 920px;
+    top: 49px;
+
+    font-family: 'MyFont';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    /* identical to box height */
+    text-align: right;
+
+    /* off black */
+    color: #1A1A1A;
+}
+
+.form-1 .header hr {
+    position: absolute;
+    width: 798px;
+    height: 0px;
+    left: 150px;
+    top: 88px;
+
+    /* off black */    
+    border: 1px solid #1A1A1A;
+}
+
+.form-1 .header .ellipse {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 48px;
+    top: 45px;
+    border-radius: 20px;
+
+    background: #FFFFFF;
+}
+
+.form-1 .header a {
+    position: absolute;
+    /*width: 9.21px;
+    height: 16px;*/
+    left: 62px;
+    top: 57px;
+
+    /* შავი/500 */
+    background: #2E2E2E;
+}
+
+.form-1 .full-name {
+    /*background-color: aqua;*/
+    margin: 0;
+    width: 100%;
+    height: 18vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+
+    padding-left: 150px;
+}
+
+.form-1 .full-name .name {
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    align-items: left;
+    margin-right: 10px;
+    padding-top: 30px;
+}
+
+.input-name {
+    margin: 0;
+    margin-bottom: 7px;
+
+    font-family: 'MyFont';
+    font-style: bold;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 21px;
+
+    color: #000000;
+}
+
+input {
+    box-sizing: border-box;
+
+    padding-left: 15px;
+    margin-right: 50px;
+
+    width: 371px;
+    height: 48px;
+
+    background: #FFFFFF;
+    border: 1px solid #BCBCBC;
+    border-radius: 4px;
+
+    
+}
+
+.text-input {
+    font-family: 'MyFont';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+label {
+    margin-top: 7px;
+
+    font-family: 'MyFont';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+
+    /* შავი/500 */
+    color: #2E2E2E;
+}
+
+.form-1 .photo {
+    /*background-color: gray;*/
+    margin: 0;
+    width: 100%;
+    height: 10vh;
+    padding-left: 150px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.form-1 .photo .photo-container-1 {
+    /*background-color: green;*/
+    width: 270px;
+    height: 100%;
+    margin: 0;
+}
+
+.form-1 .photo .photo-container-2 {
+    /*background-color: yellow;*/
+    width: 20%;
+    height: 100%;
+    margin: 0;
+
+    padding-top: 40px;
+}
+
+.form-1 .photo p {
+    position: absolute;
+
+    font-family: 'MyFont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+
+    /* off black */
+    color: #1A1A1A;
+}
+
+.form-1 .photo button {
+    background: #0E80BF;
+    border-radius: 4px;
+    border: none;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px 12px;
+
+    width: 107px;
+    height: 27px;
+
+    color: white;
+}
+
+.form-1 .about-me {
+    /*background-color: coral;*/
+    width: 100%;
+    height: 18vh;
+    padding-left: 150px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.form-1 .about-me textarea {
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-top: 10px;
+    margin: 0;
+
+    width: 798px;
+    height: 97px;
+
+    background: #FFFFFF;
+    border: 1px solid #BCBCBC;
+    border-radius: 4px;
+
+    font-family: 'MyFont';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    /*color: rgba(0, 0, 0, 0.6);*/
+}
+
+.form-1 .email {
+    /*background-color: aquamarine;*/
+    width: 100%;
+    height: 14vh;
+
+    padding-left: 150px;
+}
+
+.form-1 .email .name {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-1 .mobile {
+    /*background-color:darkgoldenrod;*/
+    width: 100%;
+    height: 14vh;
+
+    padding-left: 150px;
+}
+
+.form-1 .mobile .name {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-1 .next-class {
+    /*background-color:#BCBCBC;*/
+    width: 100%;
+    height: 10vh;
+}
+
+.form-1 .next-class .next-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 35px;
+    gap: 20px;
+
+    position: absolute;
+    width: 151px;
+    height: 48px;
+    right: 972px;
+    bottom: 65px;
+
+    background: #6B40E3;
+    border-radius: 4px;
+    border: none;
+
+    width: 140px;
+    height: 20px;
+
+    font-family: 'MyFont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    /* identical to box height */
+    letter-spacing: 0.08em;
+
+    color: #FFFFFF;
+
+    cursor: pointer;    
+}
+
+
+
+
+
+
+
+
+
+.info-response {
+    width: 43%;
+    height: 100vh;
+    background-color: white;
+}
