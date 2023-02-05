@@ -24,12 +24,28 @@
             <div class="full-name">
                 <div class="name first">
                     <p class="input-name">სახელი</p>
-                    <input type="text" class="text-input short" id="first-name-getter" placeholder="ანზორ" onkeyup="firstNameSetter()">
+
+                    <div class="warning">
+                        <div class="correct">
+                            <input type="text" class="text-input short" id="first-name-getter" placeholder="ანზორ" onkeyup="firstNameSetter()">
+                            <img class="correct-icon" src="../img/correct.png">
+                        </div>
+                        <img class="warning-icon" src="../img/warning.png">
+                    </div>
+
                     <label class="label">მინიმუმ 2 ასო, ქართული ასოები</label>
                 </div>
                 <div class="name last">
                     <p class="input-name">გვარი</p>
-                    <input type="text" class="text-input short" id="last-name-getter" placeholder="მუმლაძე" onkeyup="lastNameSetter()">
+
+                    <div class="warning">
+                        <div class="correct">
+                            <input type="text" class="text-input short" id="last-name-getter" placeholder="მუმლაძე" onkeyup="lastNameSetter()">
+                            <img class="correct-icon" src="../img/correct.png">
+                        </div>
+                        <img class="warning-icon" src="../img/warning.png">
+                    </div>
+
                     <label class="label">მინიმუმ 2 ასო, ქართული ასოები</label>
                 </div>
             </div>
@@ -41,6 +57,7 @@
                 <div class="photo-container-2">
                     <button onclick="document.getElementById('file-input').click();">ატვირთვა</button>
                     <input id="file-input" type="file" style="display: none;"> 
+                    <img src="../img/warning.png">
                 </div>                
             </div>
 
@@ -52,7 +69,15 @@
             <div class="email">
                 <div class="name">
                     <p class="input-name">ელ. ფოსტა</p>
-                    <input type="text" class="text-input" id="email-getter" placeholder="anzor666@redberry.ge" onkeyup="emailSetter()">
+
+                    <div class="warning">
+                        <div class="correct">
+                            <input type="text" class="text-input long" id="email-getter" placeholder="anzor666@redberry.ge" onkeyup="emailSetter()">
+                            <img class="correct-icon" src="../img/correct.png">
+                        </div>
+                        <img class="warning-icon" src="../img/warning.png">
+                    </div>
+
                     <label class="label">უნდა მთავრდებოდეს @redberry.ge-ით</label>
                 </div>
             </div>
@@ -60,7 +85,14 @@
             <div class="mobile">
                 <div class="name">
                     <p class="input-name">მობილურის ნომერი</p>
-                    <input type="text" class="text-input" id="mobile-getter" placeholder="+995 551 12 34 56" onkeyup="mobileSetter()">
+
+                    <div class="warning">
+                        <div class="correct">
+                            <input type="text" class="text-input long" id="mobile-getter" placeholder="+995 551 12 34 56" onkeyup="mobileSetter()">
+                            <img class="correct-icon" src="../img/correct.png">
+                        </div>
+                        <img class="warning-icon" src="../img/warning.png">
+                    </div>
                     <label class="label">უნდა აკმაყოფილებდეს ქართული მობილურის ნომრის ფორმატს</label>
                 </div>
             </div>
@@ -75,9 +107,10 @@
         <div class="info-response"> 
 
             <div class="dynamic-text">
-                <!--<h2>ანზორ მუმლაძე</h2>-->
-                <h2 id="first-name-setter"></h2>
-                <h2 id="last-name-setter"></h2>
+                <div class="dynamic-full-name">
+                    <h2 id="first-name-setter"></h2>
+                    <h2 id="last-name-setter"></h2>
+                </div>
                 <div class="contact email">
                     <img src="../img/at.png">
                     <p id="email-setter"></p>
