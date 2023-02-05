@@ -24,12 +24,12 @@
             <div class="full-name">
                 <div class="name first">
                     <p class="input-name">სახელი</p>
-                    <input type="text" class="text-input short" placeholder="ანზორ">
+                    <input type="text" class="text-input short" id="first-name-getter" placeholder="ანზორ" onkeyup="firstNameSetter()">
                     <label class="label">მინიმუმ 2 ასო, ქართული ასოები</label>
                 </div>
                 <div class="name last">
                     <p class="input-name">გვარი</p>
-                    <input type="text" class="text-input short" placeholder="მუმლაძე">
+                    <input type="text" class="text-input short" id="last-name-getter" placeholder="მუმლაძე" onkeyup="lastNameSetter()">
                     <label class="label">მინიმუმ 2 ასო, ქართული ასოები</label>
                 </div>
             </div>
@@ -46,13 +46,13 @@
 
             <div class="about-me">
                 <p class="input-name">ჩემ შესახებ (არასავალდებულო)</p>
-                <textarea class="text-input" rows="5" cols="5" placeholder="ზოგადი ინფო შენ შესახებ"></textarea>
+                <textarea class="text-input" id="about-getter" rows="5" cols="5" placeholder="ზოგადი ინფო შენ შესახებ" onkeyup="aboutSetter()"></textarea>
             </div>
 
             <div class="email">
                 <div class="name">
                     <p class="input-name">ელ. ფოსტა</p>
-                    <input type="text" class="text-input" placeholder="anzor666@redberry.ge">
+                    <input type="text" class="text-input" id="email-getter" placeholder="anzor666@redberry.ge" onkeyup="emailSetter()">
                     <label class="label">უნდა მთავრდებოდეს @redberry.ge-ით</label>
                 </div>
             </div>
@@ -60,7 +60,7 @@
             <div class="mobile">
                 <div class="name">
                     <p class="input-name">მობილურის ნომერი</p>
-                    <input type="text" class="text-input" placeholder="+995 551 12 34 56">
+                    <input type="text" class="text-input" id="mobile-getter" placeholder="+995 551 12 34 56" onkeyup="mobileSetter()">
                     <label class="label">უნდა აკმაყოფილებდეს ქართული მობილურის ნომრის ფორმატს</label>
                 </div>
             </div>
@@ -75,21 +75,20 @@
         <div class="info-response"> 
 
             <div class="dynamic-text">
-                <h2>ანზორ მუმლაძე</h2>
+                <!--<h2>ანზორ მუმლაძე</h2>-->
+                <h2 id="first-name-setter"></h2>
+                <h2 id="last-name-setter"></h2>
                 <div class="contact email">
                     <img src="../img/at.png">
-                    <p>anzorr666@gmail.com</p>
+                    <p id="email-setter"></p>
                 </div>
                 <div class="contact phone">
                     <img src="../img/telephone.png">
-                    <p>+995 597 63 45 16</p>
+                    <p id="mobile-setter"></p>
                 </div>
                 <div class="about-person">
                     <h3>ჩემ შესახებ</h3>
-                    <p>
-                        ძალიან მიყვარს დიზაინის კეთება. დილით ადრე რომ 
-                        ავდგები გამამხნევებელი ვარჯიშების მაგიერ დიზაინს ვაკეთებ. 
-                    </p>
+                    <p id="about-setter"></p>
                 </div>             
             </div>
 
@@ -100,5 +99,7 @@
             <img class="red-logo" src="../img/red-logo.png">
         </div>
     </div>
+
+    <script src="../JS/keyup.js"></script>
 </body>
 </html>
